@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7acdde0056094d77b11fef419032a43c" Name="Diagram1">
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.Category" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.Order" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.OrderItem" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.Product" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.Production" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.Role" Width="1.5" PointX="1.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.Size" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.StockProductItem" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.Subcategory" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.User" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeSalesAnisModel.vw_ProductCatalog" Width="1.5" PointX="7.75" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_OrderItem_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_OrderItem_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_OrderItem_Size" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_Product_Production" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_Product_Subcategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_Stock_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeSalesAnisModel.FK_Stock_Size" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

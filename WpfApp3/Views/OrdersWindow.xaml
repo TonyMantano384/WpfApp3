@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp3.Views.OrdersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список заказов" Height="600" Width="900"
+        WindowStartupLocation="CenterOwner"
+        Icon="/Resources/chudobuv.png">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Список заказов" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <DataGrid Grid.Row="1" x:Name="DgOrders" AutoGenerateColumns="False"
+                  IsReadOnly="True" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" Binding="{Binding IdOrder}" Width="60"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding DateOrder, StringFormat=dd.MM.yyyy}" Width="120"/>
+                <DataGridTextColumn Header="ФИО клиента" Binding="{Binding Fio}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal"
+                    HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Состав заказа"
+                    Width="150" Height="34" Style="{StaticResource AccentButton}"
+                    Click="BtnComposition_Click"/>
+            <Button x:Name="BtnEdit" Content="Редактировать" Width="150" Height="34"
+                    Margin="10,0" Style="{StaticResource AccentButton}"
+                    Visibility="Collapsed" Click="BtnEdit_Click"/>
+            <Button Content="Удалить" Width="120" Height="34" Margin="0,0,10,0"
+                    Click="BtnDeleteOrder_Click"/>
+            <Button Content="Закрыть" Width="120" Height="34" Click="BtnClose_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
